@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 
 class AppIcons {
   static final Image googleLogo = Image.asset(
-    "assets/images/g-logo-2.png",
+    "assets/logos/g_logo.png",
+    height: 20,
+  );
+  static final Image appLogo = Image.asset(
+    "assets/logos/tmp_app_logo.png",
     height: 20,
   );
 }
