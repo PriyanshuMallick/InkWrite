@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../authentication/auth_repository.dart';
 import '../themes/app_colors.dart';
 import '../themes/app_icons.dart';
 import '../themes/app_styles.dart';
@@ -8,12 +9,16 @@ import '../themes/app_styles.dart';
 class LoginScreen extends ConsumerWidget {
   const LoginScreen({super.key});
 
+  void signInWithGoogle(WidgetRef ref) {
+    ref.read(authRepositoryProvider).signInWithGoogle();
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       body: Center(
         child: ElevatedButton.icon(
-          onPressed: () => print("Google"),
+          onPressed: () => signInWithGoogle(ref),
           icon: AppIcons.googleLogo,
           label: Text(
             "Sign In with Google",
