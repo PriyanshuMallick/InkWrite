@@ -49,3 +49,6 @@ app.*.map.json
 # Mine
 __*
 
+# Node.js
+node_modules
+
