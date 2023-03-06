@@ -29,7 +29,8 @@ To install and run InkWrite on your local machine, follow these steps:
 1. Clone the repository using `git clone https://github.com/PriyanshuMallick/InkWrite.git`
 2. Open the project in your favorite IDE or text editor
 3. Install the required dependencies by running `flutter pub get`
-4. Start the app using `flutter run` 🚀
+4. Follow this [documentation](https://pub.dev/packages/google_sign_in) to register your app with google for Google Sign-in
+5. Start the app using `flutter run` 🚀
 
 ## License 📜
 
